@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا - إبداع جرافيك</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- شريط التنقل -->
+    <header class="sticky top-0 z-50 glass-effect shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 creative-gradient rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <span class="mr-3 text-2xl font-bold text-gradient">إبداع جرافيك</span>
+                </div>
+                
+                <nav class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 relative group">
+                        الرئيسية
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 relative group">
+                        عنا
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="services.html" class="text-purple-600 font-medium transition-colors duration-300 relative group">
+                        خدماتنا
+                        <span class="absolute bottom-0 right-0 w-full h-0.5 bg-purple-600"></span>
+                    </a>
+                    <a href="portfolio.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 relative group">
+                        أعمالنا
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="blog.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 relative group">
+                        المدونة
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 relative group">
+                        تواصل معنا
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+                
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="p-2 rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-search text-gray-600"></i>
+                    </button>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-xl font-medium hover:bg-purple-700 transition-colors duration-300 shadow-md">
+                        اطلب تصميمك الآن
+                    </button>
+                    <button id="mobile-menu-button" class="lg:hidden p-2 rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-bars text-gray-600"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- قائمة الجوال -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-2 border-t border-gray-200 pt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2 border-b border-gray-100">الرئيسية</a>
+                    <a href="about.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2 border-b border-gray-100">عن المتجر</a>
+                    <a href="services.html" class="text-purple-600 font-medium transition-colors duration-300 py-2 border-b border-gray-100">خدماتنا</a>
+                    <a href="portfolio.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2 border-b border-gray-100">أعمالنا</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2 border-b border-gray-100">المدونة</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-300 py-2">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- رأس الصفحة -->
+    <section class="py-20 creative-pattern relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/50 z-0"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">خدماتنا <span class="text-gradient">الإبداعية</span></h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8">نقدم مجموعة متكاملة من الخدمات الإبداعية في مجال الدعاية والإعلان والتصاميم والطباعة والجرافيك لتلبية جميع احتياجاتك</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium">تصميم الجرافيك</span>
+                    <span class="bg-cyan-100 text-cyan-600 px-4 py-2 rounded-full text-sm font-medium">الدعاية والإعلان</span>
+                    <span class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full text-sm font-medium">الطباعة الاحترافية</span>
+                    <span class="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-medium">تصميم الويب</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم خدمات التصميم الجرافيكي -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">خدمات <span class="text-gradient">التصميم الجرافيكي</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نقدم حلول تصميم جرافيكي إبداعية تساعد علامتك التجارية على التميز والوصول إلى جمهورك المستهدف</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- خدمة 1 -->
+                <div class="service-card p-6 text-center">
+                    <div class="service-icon creative-gradient">
+                        <i class="fas fa-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">تصميم الشعارات</h3>
+                    <p class="text-gray-600 mb-4">تصميم شعار إبداعي يعبر عن هوية علامتك التجارية ويترك انطباعًا قويًا لدى عملائك.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>3 مقترحات تصميمية</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>ملفات متعددة الاستخدام</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>دعم واستشارة مجانية</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                        اطلب الخدمة <i class="fas fa-arrow-left mr-1"></i>
+                    </a>
+                </div>
+                
+                <!-- خدمة 2 -->
+                <div class="service-card p-6 text-center">
+                    <div class="service-icon bg-cyan-500">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">هوية بصرية متكاملة</h3>
+                    <p class="text-gray-600 mb-4">تصميم هوية بصرية متكاملة تشمل الشعار، الألوان، الخطوط، ودليل الاستخدام.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>دليل الهوية البصرية</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تصميم مواد ترويجية</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>ملفات متنوعة للاستخدام</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                        اطلب الخدمة <i class="fas fa-arrow-left mr-1"></i>
+                    </a>
+                </div>
+                
+                <!-- خدمة 3 -->
+                <div class="service-card p-6 text-center">
+                    <div class="service-icon bg-yellow-500">
+                        <i class="fas fa-brochure"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">تصميم البروشورات والكتالوجات</h3>
+                    <p class="text-gray-600 mb-4">تصميم بروشورات وكتالوجات إبداعية تعرض منتجاتك وخدماتك بطريقة جذابة ومؤثرة.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تصميم إبداعي وجذاب</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>طباعة عالية الجودة</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تعديلات مجانية</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                        اطلب الخدمة <i class="fas fa-arrow-left mr-1"></i>
+                    </a>
+                </div>
+                
+                <!-- خدمة 4 -->
+                <div class="service-card p-6 text-center">
+                    <div class="service-icon bg-pink-500">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">تصميم العبوات والتغليف</h3>
+                    <p class="text-gray-600 mb-4">تصميم عبوات وتغليف مبتكر يجذب انتباه العملاء ويعزز قيمة منتجك في السوق.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>دراسة السوق والمنافسين</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تصميم ثلاثي الأبعاد</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>ملفات جاهزة للطباعة</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                        اطلب الخدمة <i class="fas fa-arrow-left mr-1"></i>
+                    </a>
+                </div>
+                
+                <!-- خدمة 5 -->
+                <div class="service-card p-6 text-center">
+                    <div class="service-icon bg-green-500">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">الرسم والتصميم اليدوي</h3>
+                    <p class="text-gray-600 mb-4">تصميم رسومات ولوحات فنية يدوية تضيف لمسة إبداعية فريدة لعلامتك التجارية.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>رسم يدوي إبداعي</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تحويل الرسم إلى رقمي</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تنسيقات متعددة</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                        اطلب الخدمة <i class="fas fa-arrow-left mr-1"></i>
+                    </a>
+                </div>
+                
+                <!-- خدمة 6 -->
+                <div class="service-card p-6 text-center">
+                    <div class="service-icon bg-red-500">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">تصميم الإنفوجرافيك</h3>
+                    <p class="text-gray-600 mb-4">تحويل البيانات والمعلومات المعقدة إلى تصاميم إنفوجرافيك جذابة وسهلة الفهم.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تحليل البيانات والمعلومات</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تصميم مرئي جذاب</span>
+                        </div>
+                        <div class="service-feature flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تنسيقات متعددة الاستخدام</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                        اطلب الخدمة <i class="fas fa-arrow-left mr-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم خدمات الدعاية والإعلان -->
+    <section class="py-16 creative-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">خدمات <span class="text-gradient">الدعاية والإعلان</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نطور استراتيجيات إعلانية مبتكرة تساعدك على الوصول إلى جمهورك المستهدف وزيادة مبيعاتك</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- خدمة 1 -->
+                <div class="service-card p-6 flex flex-col md:flex-row items-center">
+                    <div class="service-icon creative-gradient mb-4 md:mb-0 md:ml-6">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">حملات إعلانية متكاملة</h3>
+                        <p class="text-gray-600 mb-4">تخطيط وتنفيذ حملات إعلانية متكاملة عبر القنوات التقليدية والرقمية لتحقيق أهدافك التسويقية.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                            اكتشف المزيد <i class="fas fa-arrow-left mr-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- خدمة 2 -->
+                <div class="service-card p-6 flex flex-col md:flex-row items-center">
+                    <div class="service-icon bg-cyan-500 mb-4 md:mb-0 md:ml-6">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">إعلانات الوسائط المتعددة</h3>
+                        <p class="text-gray-600 mb-4">تصميم وإنتاج إعلانات مرئية ومسموعة مبتكرة تلائم مختلف المنصات الإعلانية.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                            اكتشف المزيد <i class="fas fa-arrow-left mr-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- خدمة 3 -->
+                <div class="service-card p-6 flex flex-col md:flex-row items-center">
+                    <div class="service-icon bg-yellow-500 mb-4 md:mb-0 md:ml-6">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">إعلانات وسائل التواصل الاجتماعي</h3>
+                        <p class="text-gray-600 mb-4">تصميم محتوى إعلاني مخصص لمنصات التواصل الاجتماعي لزيادة التفاعل والوصول.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                            اكتشف المزيد <i class="fas fa-arrow-left mr-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- خدمة 4 -->
+                <div class="service-card p-6 flex flex-col md:flex-row items-center">
+                    <div class="service-icon bg-pink-500 mb-4 md:mb-0 md:ml-6">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">تخطيط استراتيجي للإعلانات</h3>
+                        <p class="text-gray-600 mb-4">تطوير استراتيجيات إعلانية مدروسة بناءً على دراسة السوق والمنافسين والجمهور المستهدف.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition-colors duration-300 inline-flex items-center">
+                            اكتشف المزيد <i class="fas fa-arrow-left mr-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم باقات الأسعار -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">باقات <span class="text-gradient">الأسعار</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">اختر الباقة التي تناسب احتياجاتك وميزانيتك، مع إمكانية تخصيص الباقات حسب متطلباتك الخاصة</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- باقة 1 -->
+                <div class="pricing-card p-8 rounded-2xl text-center">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">الباقة الأساسية</h3>
+                    <div class="text-4xl font-bold text-purple-600 mb-6">499 <span class="text-lg text-gray-500">ر.س</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تصميم شعار احترافي</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>3 مقترحات تصميمية</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>2 مراجعات وتعديلات</span>
+                        </li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fas fa-times text-red-500 ml-2"></i>
+                            <span class="line-through">هوية بصرية متكاملة</span>
+                        </li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fas fa-times text-red-500 ml-2"></i>
+                            <span class="line-through">تصميم مواد ترويجية</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-100 text-gray-700 py-3 rounded-xl font-medium hover:bg-gray-200 transition-colors duration-300">
+                        اختر الباقة
+                    </button>
+                </div>
+                
+                <!-- باقة 2 -->
+                <div class="pricing-card popular p-8 rounded-2xl text-center">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">الباقة المتوسطة</h3>
+                    <div class="text-4xl font-bold text-purple-600 mb-6">999 <span class="text-lg text-gray-500">ر.س</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تصميم شعار احترافي</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>5 مقترحات تصميمية</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>5 مراجعات وتعديلات</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>هوية بصرية أساسية</span>
+                        </li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fas fa-times text-red-500 ml-2"></i>
+                            <span class="line-through">تصميم مواد ترويجية</span>
+                        </li>
+                    </ul>
+                    <button class="w-full creative-gradient text-white py-3 rounded-xl font-medium hover:shadow-lg transition-all duration-300">
+                        اختر الباقة
+                    </button>
+                </div>
+                
+                <!-- باقة 3 -->
+                <div class="pricing-card p-8 rounded-2xl text-center">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">الباقة المتكاملة</h3>
+                    <div class="text-4xl font-bold text-purple-600 mb-6">1,499 <span class="text-lg text-gray-500">ر.س</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تصميم شعار احترافي</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>مقترحات تصميمية غير محدودة</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>مراجعات وتعديلات غير محدودة</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>هوية بصرية متكاملة</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            <span>تصميم مواد ترويجية</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-100 text-gray-700 py-3 rounded-xl font-medium hover:bg-gray-200 transition-colors duration-300">
+                        اختر الباقة
+                    </button>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">هل تحتاج إلى باقة مخصصة تناسب احتياجاتك الخاصة؟</p>
+                <button class="border-2 border-purple-600 text-purple-600 px-6 py-3 rounded-xl font-medium hover:bg-purple-50 transition-colors duration-300">
+                    اطلب باقة مخصصة
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عملية العمل -->
+    <section class="py-16 creative-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">كيف <span class="text-gradient">نعمل</span>؟</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نتبع عملية عمل منظمة لضمان تحقيق أفضل النتائج وتلبية توقعاتك في كل مشروع</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <!-- خطوة 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 creative-gradient rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto">1</div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800">الاستشارة والتحليل</h3>
+                    <p class="text-gray-600 text-sm">نناقش متطلباتك وأهدافك ونحلل السوق والمنافسين لفهم احتياجاتك بدقة.</p>
+                </div>
+                
+                <!-- خطوة 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto">2</div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800">التخطيط والتصميم</h3>
+                    <p class="text-gray-600 text-sm">نطور استراتيجية تصميمية ونقدم مقترحات إبداعية تناسب هوية علامتك التجارية.</p>
+                </div>
+                
+                <!-- خطوة 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto">3</div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800">التنفيذ والمراجعة</h3>
+                    <p class="text-gray-600 text-sm">ننفذ التصاميم ونتيح لك فرصة المراجعة وطلب التعديلات لضمان رضاك التام.</p>
+                </div>
+                
+                <!-- خطوة 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto">4</div>
+                    <h3 class="text-lg font-bold mb-2 text-gray-800">التسليم والدعم</h3>
+                    <p class="text-gray-600 text-sm">نسلم لك الملفات النهائية ونقدم الدعم اللازم لضمان الاستخدام الأمثل للتصاميم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="creative-gradient rounded-2xl p-8 md:p-12 text-white text-center shadow-xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">مستعد لبدء مشروعك الإبداعي؟</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">اتصل بنا اليوم واحصل على استشارة مجانية لمشروعك في مجال الدعاية والإعلان والتصاميم</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 sm:space-x-reverse">
+                    <button class="bg-white text-purple-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors duration-300">
+                        اتصل بنا الآن
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition-colors duration-300">
+                        اطلب عرض سعر
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 creative-gradient rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="mr-2 text-xl font-bold">إبداع جرافيك</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">متخصصون في تقديم حلول إبداعية متكاملة في مجال الدعاية والإعلان والتصاميم والطباعة والجرافيك.</p>
+                    <div class="flex space-x-3 space-x-reverse">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-700 flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-700 flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-700 flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-700 flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">عن المتجر</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">خدماتنا</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors duration-300">أعمالنا</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-300">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">تصميم الجرافيك</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الدعاية والإعلان</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الطباعة الاحترافية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">تصميم الويب والموبيل</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الموشن جرافيك</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">التصوير والفيديو</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">معلومات الاتصال</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 ml-2 text-purple-400"></i>
+                            <span>المملكة العربية السعودية، الرياض</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 ml-2 text-purple-400"></i>
+                            <span>+966 123 456 789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 ml-2 text-purple-400"></i>
+                            <span>info@ebdaa-graphic.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 ml-2 text-purple-400"></i>
+                            <span>الأحد - الخميس: 9 ص - 6 م</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 إبداع جرافيك. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
